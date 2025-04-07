@@ -46,6 +46,7 @@ export default function Login() {
         onChangeText={(value) => {
           setUser({ ...user, email: value });
         }}
+        keyboardType="email-address"
       />
 
       <View style={styles.passwordContainer}>

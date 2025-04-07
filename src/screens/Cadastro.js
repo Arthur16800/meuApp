@@ -42,17 +42,23 @@ export default function Cadastro(){
         <TextInput style={styles.input}
         placeholder="Email"
         value={user.email}
-        onChangeText={(value)=> {setUser({...user,email: value})} }/>
+        onChangeText={(value)=> {setUser({...user,email: value})} }
+        keyboardType="email-address"
+        />
 
         <TextInput style={styles.input}
         placeholder="CPF"
         value={user.cpf}
-        onChangeText={(value)=> {setUser({...user,cpf: value})} }/>
+        onChangeText={(value)=> {setUser({...user,cpf: value})}}
+        keyboardType="numeric"
+        />
 
         <TextInput style={styles.input}
         placeholder="Data de nascimento"
         value={user.data_nascimento}
-        onChangeText={(value)=> {setUser({...user,data_nascimento: value})} }/>
+        onChangeText={(value)=> {setUser({...user,data_nascimento: value})} }
+        keyboardType="numeric"
+        />
 
         <TextInput style={styles.input}
         placeholder="Senha"
