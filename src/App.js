@@ -18,9 +18,6 @@ export default function App() {
   return (
     <NavigationContainer>
       <Stack.Navigator>
-        {/* <Stack.Screen name="TaskList" component={TaskList} />
-        <Stack.Screen name="TaskDetail" component={TaskDetail} /> */}
-
         <Stack.Screen
           name="Login"
           component={() => (
@@ -29,6 +26,7 @@ export default function App() {
             </Layout>
           )}
         />
+
         <Stack.Screen
           name="Cadastro"
           component={() => (
@@ -37,14 +35,16 @@ export default function App() {
             </Layout>
           )}
         />
-
-        <Stack.Screen name="EventosScreen">
-          {() => (
+        <Stack.Screen
+          name="EventosScreen"
+          component={() => (
             <Layout>
               <EventosScreen />
             </Layout>
           )}
-        </Stack.Screen>
+        />
+
+        
 
         <Stack.Screen name="Home" component={Home} />
         <Stack.Screen name="CadastroEvento" component={CadastroEvento} />
