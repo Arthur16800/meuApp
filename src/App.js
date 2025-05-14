@@ -35,6 +35,7 @@ export default function App() {
             </Layout>
           )}
         />
+
         <Stack.Screen
           name="EventosScreen"
           component={() => (
@@ -44,14 +45,22 @@ export default function App() {
           )}
         />
 
-        
-
         <Stack.Screen name="Home" component={Home} />
-        <Stack.Screen name="CadastroEvento" component={CadastroEvento} />
+
+        <Stack.Screen
+          name="CadastroEvento"
+          component={() => (
+            <Layout>
+              <CadastroEvento />
+            </Layout>
+          )}
+        />
+
         <Stack.Screen
           name="CadastroOrganizador"
           component={CadastroOrganizador}
         />
+
         <Stack.Screen name="CadastroIngresso" component={CadastroIngresso} />
       </Stack.Navigator>
     </NavigationContainer>

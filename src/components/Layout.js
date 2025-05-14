@@ -21,7 +21,7 @@ export default function Layout({children}) {
 
 const style = StyleSheet.create({
   header: {
-    backgroundColor: "blue",
+    backgroundColor: "#00A6FF",
     width: "100%",
     height: 60,
     justifyContent: "center",
